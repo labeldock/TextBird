@@ -1,0 +1,55 @@
+{
+  "name": "TextBird theme",
+  "displayName": "TextBird theme",
+  "description": "Theme inspired by TM",
+  "version": "0.0.6",
+  "publisher": "labeldock",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "TextBird theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/textbird.json"
+      }
+    ],
+    "setting": {
+      "editor.fontSize": 13,
+      "editor.lineHeight": 18,
+      "editor.insertSpaces": true,
+      "editor.roundedSelection": false,
+      "editor.scrollBeyondLastLine": false,
+      "editor.quickSuggestions": false,
+      "html.format.wrapLineLength": 0
+    },
+    "keybindings": [
+      {
+        "key": "up",
+        "command": "removeSecondaryCursors",
+        "when": "editorTextFocus && editorHasMultipleSelections"
+      },
+      {
+        "key": "down",
+        "command": "removeSecondaryCursors",
+        "when": "editorTextFocus && editorHasMultipleSelections"
+      },
+      {
+        "key": "shift+ctrl+k",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "shift+escape",
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "textInputFocus && !editorReadonly && !suggestWidgetVisible"
+      },
+      {
+        "key": "shift+escape",
+        "command": "editor.action.inlineSuggest.showNext",
+        "when": "textInputFocus && !editorReadonly && !suggestWidgetVisible && inlineSuggestionVisible"
+      }
+    ]
+  }
+}

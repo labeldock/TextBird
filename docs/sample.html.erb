@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <style>
+    body > header h1 { margin: 8px; }
+    header {
+      display:flex;
+      justify-content:space-between;
+    }
+    </style>
+    <script>
+    function main (){
+      return ["string", void 0]
+    }
+    const method = {
+      info (){
+        return {
+          foo : {
+            bar : {
+              baz : {
+                last :{}
+              }
+            }
+          }
+        }
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <%= link_to "Main", root_path %>
+      </h1>
+      <menu>
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }  %>
+          </li>
+        <% end %>
+      </menu>
+    </header>
+    <div>
+      <% if notice %>
+        <p class="notice"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
