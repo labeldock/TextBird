@@ -2,7 +2,7 @@
   "name": "vscode-theme-textbird",
   "displayName": "TextBird theme",
   "description": "Theme inspired by TM",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "labeldock",
   "engines": {
 		"vscode": "^1.13.0"
