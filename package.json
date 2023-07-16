@@ -1,32 +1,37 @@
 {
-  "name": "vscode-theme-textbird",
+  "private": true,
+  "name": "textbird-theme",
   "displayName": "TextBird theme",
   "description": "Theme inspired by TM",
-  "version": "0.1.1",
+  "version": "0.1.2-beta.1",
   "publisher": "labeldock",
+	"icon": "docs/icon.png",
   "engines": {
-		"vscode": "^1.13.0"
+    "vscode": "^1.17.0"
 	},
+  "keywords": [
+    "Vscode",
+    "Theme",
+    "Vsdark",
+    "TextBird"
+  ],
   "categories": [
-		"Themes"
+    "Themes",
+    "Other"
 	],
+  "license": "MIT",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/labeldock/textbird.git"
+		"url": "https://github.com/labeldock/textbird.git",
+    "directory": "/"
 	},
   "bugs": {
 		"url": "https://github.com/labeldock/textbird/issues"
 	},
-  "keywords": [
-		"Vscode",
-		"Theme",
-		"Vsdark",
-		"TextBird"
-	],
   "contributes": {
     "themes": [
       {
-        "label": "TextBird theme",
+        "label": "TextBird Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/textbird.json"
       }
